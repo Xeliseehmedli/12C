@@ -1,0 +1,120 @@
+.investment-section {
+  padding: 10vw;
+  .investment-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 5%;
+    margin-left: 5%;
+  
+    h2 {
+      font-family: "Inter Tight", sans-serif;
+      font-size: 20px;
+      position: relative;
+      top: 1vw;
+    }
+    p {
+      font-family: "Poppins", sans-serif;
+      color: #b0b0b0;
+      position: relative;
+      top: 1.5vw;
+    }
+  }
+}
+.investment-header {
+  padding: 3vw;
+ 
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  .investment-title {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    background: linear-gradient(to top, #eb1d25 70%, transparent 50%);
+    width: 65%;
+  }
+  .investment-subtitle {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+  }
+  .investment-description {
+    font-family: "Inter Tight", sans-serif;
+    font-style: italic;
+    font-size: 24px;
+    position: relative;
+  }
+}
+.equity-section {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+ .equity-card{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ }
+  h1 {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 40px;
+    background: linear-gradient(to top, #eb1d25 70%, transparent 50%);
+    width: 45%;
+  }
+  p:first-of-type {
+    font-style: italic;
+    font-size: 36px;
+    color: #c7c7c7;
+   
+  }
+  p:last-of-type {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 26px;
+    font-weight: 500 !important;
+    color: #737373;
+  }
+}
+.sponsorship-section {
+  margin-top: 16%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  h1 {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 45px;
+    margin-left: 9vw;
+    background: linear-gradient(to top, #eb1d25 80%, transparent 30%);
+    width: 45%;
+    text-transform: uppercase;
+  }
+  .sponsorship-content {
+    display: flex;
+    margin-left: 11vw;
+    gap: 20px;
+  }
+  .sponsorship-item {
+    box-shadow: 0px 10px 7px #eb1d25;
+    background-color: #eb1d25;
+    height: 40vh;
+    width: 25%;
+    padding: 7px 20px;
+    
+  }
+  p:first-of-type {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 35px;
+    font-weight: 200;
+  }
+  p:nth-of-type(2) {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  p:nth-of-type(3) {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+  }
+}

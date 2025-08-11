@@ -1,0 +1,40 @@
+.focus-container {
+  margin-top: 28%;
+
+  h1 {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 48px;
+    left: 15vw;
+   position: relative;
+   top: -3vw;
+    width: 43%;
+    background: linear-gradient(to top, #eb1d25 70%, transparent 50%);
+  }
+
+  h2 {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 30px;
+    position: relative;
+    // top: -1vw;
+    left: 1vw;
+  }
+
+  .focus-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .collaborative-investment {
+    p {
+      font-family: "Inter Tight", sans-serif;
+      color: #737373;
+      position: relative;
+      top: 1vw;
+      line-height: 150%;
+      left: 1vw;
+    }
+    img {
+      width: 23vw;
+    }
+  }
+}
