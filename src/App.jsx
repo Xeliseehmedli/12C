@@ -2,17 +2,17 @@ import { useState } from 'react'
 
 import './App.css'
  
-import "./12C/About.scss";
- import "./12C/OurFocus";
-import "./12C/OurTeam.scss";
-import "./12C/Benefits.scss";
-import "./12C/Investment.scss";
+import "./components/About.scss";
+ import "./components/OurFocus";
+import "./components/OurTeam.scss";
+import "./components/Benefits.scss";
+import "./components/Investment.scss";
 
-import About from "./12C/About";
-import OurFocus from "./12C/OurFocus";
-import Benefits from "./12C/Benefits";
-import Investment from "./12C/Investment";
-import OurTeam from "./12C/OurTeam";
+import About from "./components/About";
+import OurFocus from "./components/OurFocus";
+import Benefits from "./components/Benefits";
+import Investment from "./components/Investment";
+import OurTeam from "./components/OurTeam";
 
 
 function App() {

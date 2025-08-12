@@ -1,11 +1,10 @@
-header{
+header {
   position: sticky;
   top: 0;
   z-index: 1000;
   background-color: white;
   height: 16vh;
 }
-
 
 .header-container {
   display: flex;
@@ -16,51 +15,58 @@ header{
   .header-navigation {
     position: relative;
     left: 10%;
-    padding: 20px ;
+    padding: 20px;
     ul {
       white-space: nowrap;
       display: flex;
       list-style: none;
       gap: 20px;
-      
     }
     li {
       font-family: "Inter Tight", sans-serif;
       font-size: 18px;
       font-weight: 600;
-     
     }
-    a{
+    a {
       text-decoration: none;
     }
-    a:visited{
+    a:visited {
       color: black;
     }
-    a:hover{
+    a:hover {
       color: black;
     }
-    a:active{
+    a:active {
       color: black;
     }
-     li a {
-  text-decoration: none;
-  color: #e09900;
-  padding-bottom: 5px; 
-}
+    li a {
+      text-decoration: none;
+      color: #e09900;
+      padding-bottom: 5px;
+    }
 
- li.active a {
-  border-bottom: 3px solid red;
-}
-
+    li.active a {
+      border-bottom: 3px solid red;
+    }
   }
   .header-language-selector {
     display: flex;
     position: relative;
     left: 8%;
+    gap: 5px;
     p {
       font-family: "Roboto", sans-serif;
       font-weight: 700;
       font-size: 17px;
+      margin: 0%;
+    }
+    .language-dropdown {
+      position: absolute;
+      top: 100%;
+      left: 30px;
+      li {
+        list-style: none;
+      }
     }
   }
   .header-buttons {
@@ -108,7 +114,6 @@ header{
       text-transform: uppercase;
       position: relative;
       top: -7vw;
-
     }
 
     p:last-of-type {
@@ -119,7 +124,6 @@ header{
       font-weight: 400;
       position: relative;
       top: -4vw;
-      
     }
     span {
       color: #747474;

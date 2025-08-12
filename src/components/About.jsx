@@ -5,8 +5,17 @@ import vector from "../assets/Vector (3).svg";
 import Towers from "../assets/towersofire.png";
 import { useEffect, useState } from "react";
 export default function About() {
-   const [activeSection, setActiveSection] = useState("about");
+  const[isOpen, setIsOpen] = useState(false);
+  const[selectedLang, setSelectedLang] = useState("ENG");
+const languages= ["ENG", "AZE", "RUS"];
+const handleSelect=(lang)=>{
+  setSelectedLang(lang);
+  setIsOpen(false);
+}
 
+
+
+   const [activeSection, setActiveSection] = useState("about");
   useEffect(() => {
     const handleScroll = () => {
       const sections = ["about", "ourfocus", "ourteam", "benefits", "investment"];
@@ -57,12 +66,27 @@ export default function About() {
         </li>
       </ul>
     </div>
+<div className="header-language-selector">
+  <img src={world} alt="world icon" />
+  <p>{selectedLang}</p>
+  <img
+    src={vector}
+    alt="vector icon"
+    onClick={() => setIsOpen(!isOpen)}
+    style={{ cursor: "pointer" }}
+  />
 
-          <div className="header-language-selector">
-            <img src={world} alt="world icon" />
-            <p>ENG</p>
-            <img src={vector} alt="vector icon" />
-          </div>
+  {isOpen && (
+    <ul className="language-dropdown">
+      {languages.map((lang) => (
+        <li key={lang} onClick={() => handleSelect(lang)}>
+          {lang}
+        </li>
+      ))}
+    </ul>
+  )}
+</div>
+
 
           <div className="header-buttons">
             <button>Sign In</button>

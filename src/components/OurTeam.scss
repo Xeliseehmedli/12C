@@ -94,8 +94,8 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-left: 5vw;
-border-radius: 24px;
+    left: 68px;
+    border-radius: 24px;
     img:last-child {
       position: absolute;
       top: -60px;
@@ -117,7 +117,6 @@ border-radius: 24px;
     box-sizing: border-box;
 
     .vision-header {
-
       p:first-of-type {
         font-family: "Inter Tight", sans-serif;
         font-size: 70px;
@@ -174,13 +173,14 @@ border-radius: 24px;
   align-items: center;
   justify-content: space-around;
   margin-top: 8vw;
+  position: relative;
   span {
     color: #666d80;
     font-family: "Inter Tight", sans-serif;
     font-size: 20px;
   }
   .footer-copy {
-    margin-left: -15px;
+    margin-top: -70px;
     img {
       width: 2vw;
       position: relative;
@@ -189,8 +189,9 @@ border-radius: 24px;
   }
   .footer-icons {
     position: relative;
-    left: 140px;
+    left: 100px;
     display: flex;
-    gap: 30px;
+    gap: 25px;
+    top: -30px;
   }
 }

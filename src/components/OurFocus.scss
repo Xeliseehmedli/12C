@@ -1,12 +1,12 @@
 .focus-container {
-  margin-top: 28%;
+  margin-top: 15vw;
 
   h1 {
     font-family: "Inter Tight", sans-serif;
     font-size: 48px;
-    left: 15vw;
-   position: relative;
-   top: -3vw;
+    left: 11vw;
+    position: relative;
+    top: -3vw;
     width: 43%;
     background: linear-gradient(to top, #eb1d25 70%, transparent 50%);
   }
@@ -15,7 +15,6 @@
     font-family: "Inter Tight", sans-serif;
     font-size: 30px;
     position: relative;
-    // top: -1vw;
     left: 1vw;
   }
 
@@ -23,6 +22,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: -9%;
   }
   .collaborative-investment {
     p {
