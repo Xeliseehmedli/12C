@@ -3,7 +3,7 @@ header {
   top: 0;
   z-index: 1000;
   background-color: white;
-  height: 16vh;
+
 }
 
 .header-container {
@@ -61,12 +61,21 @@ header {
       margin: 0%;
     }
     .language-dropdown {
+      display: none;
+      list-style: none;
+      margin: 0;
+      padding: 8px 12px;
+      background: white;
       position: absolute;
-      top: 100%;
-      left: 30px;
+      top: 40px;
+      left: 14px;
+      z-index: 100;
       li {
         list-style: none;
       }
+    }
+    .language-dropdown.show {
+      display: block;
     }
   }
   .header-buttons {

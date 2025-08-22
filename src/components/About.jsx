@@ -5,20 +5,17 @@ import vector from "../assets/Vector (3).svg";
 import Towers from "../assets/towersofire.png";
 import { useEffect, useState } from "react";
 export default function About() {
-  const[isOpen, setIsOpen] = useState(false);
-  const[selectedLang, setSelectedLang] = useState("ENG");
-const languages= ["ENG", "AZE", "RUS"];
-const handleSelect=(lang)=>{
-  setSelectedLang(lang);
-  setIsOpen(false);
-}
-
-
-
-   const [activeSection, setActiveSection] = useState("about");
+  const [open, setOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("about");
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["about", "ourfocus", "ourteam", "benefits", "investment"];
+      const sections = [
+        "about",
+        "ourfocus",
+        "ourteam",
+        "benefits",
+        "investment",
+      ];
       let current = activeSection;
 
       sections.forEach((id) => {
@@ -35,7 +32,7 @@ const handleSelect=(lang)=>{
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); 
+    handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -47,46 +44,42 @@ const handleSelect=(lang)=>{
             <img src={C} alt="12C logo" />
           </div>
 
-           <div className="header-navigation">
-      <ul>
-        <li className={activeSection === "about" ? "active" : ""}>
-          <a href="#about">About</a>
-        </li>
-        <li className={activeSection === "ourfocus" ? "active" : ""}>
-          <a href="#ourfocus">Our focus</a>
-        </li>
-        <li className={activeSection === "ourteam" ? "active" : ""}>
-          <a href="#ourteam">Our team</a>
-        </li>
-        <li className={activeSection === "benefits" ? "active" : ""}>
-          <a href="#benefits">Benefits</a>
-        </li>
-        <li className={activeSection === "investment" ? "active" : ""}>
-          <a href="#investment">Investment models</a>
-        </li>
-      </ul>
-    </div>
-<div className="header-language-selector">
-  <img src={world} alt="world icon" />
-  <p>{selectedLang}</p>
-  <img
-    src={vector}
-    alt="vector icon"
-    onClick={() => setIsOpen(!isOpen)}
-    style={{ cursor: "pointer" }}
-  />
-
-  {isOpen && (
-    <ul className="language-dropdown">
-      {languages.map((lang) => (
-        <li key={lang} onClick={() => handleSelect(lang)}>
-          {lang}
-        </li>
-      ))}
-    </ul>
-  )}
-</div>
-
+          <div className="header-navigation">
+            <ul>
+              <li className={activeSection === "about" ? "active" : ""}>
+                <a href="#about">About</a>
+              </li>
+              <li className={activeSection === "ourfocus" ? "active" : ""}>
+                <a href="#ourfocus">Our focus</a>
+              </li>
+              <li className={activeSection === "ourteam" ? "active" : ""}>
+                <a href="#ourteam">Our team</a>
+              </li>
+              <li className={activeSection === "benefits" ? "active" : ""}>
+                <a href="#benefits">Benefits</a>
+              </li>
+              <li className={activeSection === "investment" ? "active" : ""}>
+                <a href="#investment">Investment models</a>
+              </li>
+            </ul>
+          </div>
+          <section className="header-language-selector">
+            <img src={world} alt="world icon" />
+            <p>ENG</p>
+            <div>
+              <ul className={`language-dropdown ${open ? "show" : ""}`}>
+                <li>AZE</li>
+                <li>RUS</li>
+                <li>FRA</li>
+              </ul>
+            </div>
+            <img
+              src={vector}
+              alt="vector icon"
+              style={{ cursor: "pointer" }}
+              onClick={() => setOpen(!open)}
+            />
+          </section>
 
           <div className="header-buttons">
             <button>Sign In</button>
